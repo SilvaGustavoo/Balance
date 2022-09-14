@@ -1,0 +1,170 @@
+/* Font: DM Sans - Bold(weight: 700) Regular(weight: 400) Medium(weight: 500) */ 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+body {
+    font-family: 'Dm Sans', sans-serif;
+    background-color: hsl(27, 66%, 92%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+main {
+    width: 450px;
+    height: 500px;
+}
+
+/* -------------------------------------- HEADER = BALNCE/SALDO ---------------------------------*/
+
+#balance {
+    display: flex;
+    background-color: hsl(10, 79%, 65%);
+    height: 100px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#balance p {
+    font-size: 15px;
+    margin-left: 25px;
+    color: #faf0ed;
+}
+
+#balance #saldo {
+    font-size: 26px;
+    font-weight: 500;
+    font-stretch: ultra-expanded;
+    margin-top: 5px;
+}
+
+#balance img {
+    margin-right: 20px;
+    width: 70%;
+}
+
+/*------------------------------- MAIN = GRAFICOS E GASTOS INTERATIVOS/ TODOS OS GASTOS DA SEMANA ---------------*/
+
+.spending {
+    height: 380px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: white;
+    color: hsl(28, 10%, 53%);
+}
+
+.spending h1 {
+    margin-left: 30px;
+    padding-top: 25px;
+    color: hsl(25, 47%, 15%);
+}
+
+.grafico {
+    display: flex;
+    margin-top: 10px;
+    height: 45%;
+    width: 90%;
+    align-items: end;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.spending div {
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: calc(100%/7);
+    height: 100%;
+    
+}
+
+.spending .elementos {
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(10, 79%, 65%);
+}
+
+.spending .grafico p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.spending .grafico .valor {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding: 5px 0px;
+    filter: opacity(0);
+}
+
+.spending hr {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: .1px hsla(28, 10%, 53%, 0.276) solid;
+    
+}
+/* ----------------------------------- HOVERS --------------------------- */ 
+
+
+.spending div:hover .valor{
+    filter: opacity(1);
+    transition: .8s all;
+}
+
+.spending div:hover .elementos {
+    filter: opacity(.6);
+    cursor: pointer;
+}
+
+
+/* ------------------------------- FOOTER = SALDO TOTAL GASTO E RELAÇÃO AO MES ANTERIOR -----------------*/
+
+.spending footer {
+    display: flex;
+    width: 90%;
+    height: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 25px;
+}
+.spending footer main {
+    height: fit-content;
+}
+.spending footer main h2 { 
+    font-size: 37px;
+    font-weight: 1000;
+    color: hsl(25, 47%, 15%);
+    margin-bottom: -8px;
+}
+
+.spending footer main p {
+    font-size: 13px;
+}
+
+.spending footer aside {
+    text-align: right;
+    font-size: 14px;
+    line-height: 20px;
+    width: 250px;
+}

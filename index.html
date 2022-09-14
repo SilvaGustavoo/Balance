@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/responsive.css">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 13px;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <section id="balance">
+      <div>
+        <p>My balance</p>
+        <p id="saldo">$921.48</p>
+      </div>
+      <figure>
+        <img src="images/logo.svg" alt="Logo" title="Logo">
+      </figure>
+    </section>
+
+    <section class="spending">
+      <h1>Spending - Last 7 days</h1>
+
+      <main class="grafico">
+
+        <div>
+          <p>mon</p>
+          <div class="elementos" id="mon"></div>
+          <p class="valor">$31.07</p>
+        </div>
+        <div>
+          <p>tue</p>
+          <div class="elementos" id="tue"></div>
+          <p class="valor">$31.07</p>
+        </div>
+        <div>
+          <p>wed</p>
+          <div class="elementos" id="wed"></div>
+          <p class="valor">$31.07</p>
+        </div>
+        <div>
+          <p>thu</p>
+          <div class="elementos" id="thu"></div>
+          <p class="valor">$31.07</p>
+        </div>
+        <div>
+          <p>fri</p>
+          <div class="elementos" id="fri"></div>
+          <p class="valor">$31.07</p>
+        </div>
+        <div>
+          <p>sat</p>
+          <div class="elementos" id="sat"></div>
+          <p class="valor">$31.07</p>
+        </div>
+        <div>
+          <p>sun</p>
+          <div class="elementos" id="sun"></div>
+          <p class="valor">$31.07</p>
+        </div>
+
+      </main>
+
+      <hr>
+
+      <footer>
+
+        <main>
+        <p>Total this month</p>
+        <h2>$478.33</h2>
+        </main>
+
+        <aside>
+        <p style="font-weight:bold; color:hsl(25, 47%, 15%)">+2.4%</p>
+        <p>from last month</p>
+        </aside>
+
+      </footer>
+
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/gustavo-santos-628b07191/" target="_blank">Gustavo Santos Silva</a>.
+  </div>
+</body>
+
+</html>

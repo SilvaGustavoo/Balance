@@ -1,0 +1,63 @@
+
+
+
+
+
+
+@media screen and (max-width: 500px) and (min-width: 380px) {
+
+    main {
+        width: 90%;
+        height: 700px;
+    }
+
+
+
+    .spending {
+        height: 480px;
+        border-radius: 10px;
+    }
+
+    .spending h1 {
+        width: 90%;
+        font-size: 28px;
+        font-weight: bold;
+        padding-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .spending hr {
+        margin-top: 35px;
+    }
+
+    .spending footer {
+        margin-top: 30px;
+    }
+
+    .spending footer main p {
+        font-size: 18px;
+    }
+
+    .spending footer main h2 {
+        font-size: 40px;
+    }
+
+    .spending footer aside {
+        font-size: 17px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) and (max-height: 750px) {
+    body {
+        height: 120vh;
+    }
+
+    main {
+        width: 90%;
+        height: 700px;
+    }
+
+}
