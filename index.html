@@ -43,44 +43,43 @@
     </section>
 
     <section class="spending">
-      <h1>Spending - Last 7 days</h1>
-
+      <h1>Spending - Last 7 days <span style="padding: .0px 3px; font-size: 8px; border: 1px black solid; border-radius: 50%; position: absolute; margin-left: 2px; background-color: rgba(128, 128, 128, 0.468); cursor: pointer;" onclick="abrir()" title="Detalhes">!</span></h1>
       <main class="grafico">
 
         <div>
           <p>mon</p>
           <div class="elementos" id="mon"></div>
-          <p class="valor">$31.07</p>
+          <p class="valor" id="valor_mon">$31.07</p>
         </div>
         <div>
           <p>tue</p>
           <div class="elementos" id="tue"></div>
-          <p class="valor">$31.07</p>
+          <p class="valor" id="valor_tue">$31.07</p>
         </div>
         <div>
           <p>wed</p>
           <div class="elementos" id="wed"></div>
-          <p class="valor">$31.07</p>
+          <p class="valor" id="valor_wed">$31.07</p>
         </div>
         <div>
           <p>thu</p>
           <div class="elementos" id="thu"></div>
-          <p class="valor">$31.07</p>
+          <p class="valor" id="valor_thu">$31.07</p>
         </div>
         <div>
           <p>fri</p>
           <div class="elementos" id="fri"></div>
-          <p class="valor">$31.07</p>
+          <p class="valor" id="valor_fri">$31.07</p>
         </div>
         <div>
           <p>sat</p>
           <div class="elementos" id="sat"></div>
-          <p class="valor">$31.07</p>
+          <p class="valor" id="valor_sat">$31.07</p>
         </div>
         <div>
           <p>sun</p>
           <div class="elementos" id="sun"></div>
-          <p class="valor">$31.07</p>
+          <p class="valor" id="valor_sun">$31.07</p>
         </div>
 
       </main>
@@ -91,11 +90,11 @@
 
         <main>
         <p>Total this month</p>
-        <h2>$478.33</h2>
+        <h2 id="total">$478.33</h2>
         </main>
 
         <aside>
-        <p style="font-weight:bold; color:hsl(25, 47%, 15%)">+2.4%</p>
+        <p style="font-weight:bold; color:hsl(25, 47%, 15%)" id="mesAnterior">+2.4%</p>
         <p>from last month</p>
         </aside>
 
@@ -103,11 +102,38 @@
 
     </section>
   </main>
+
+  <aside id="alt_gastos">
+    <span style="font-weight: bold; margin-left: auto; margin-right: 20px; margin-top: 10px;cursor: pointer;" onclick="abrir()">X</span>
+
+    <h3>Spendings</h3>
+
+    <label for="mon_input">Monday: </label>
+    <input type="text" id="mon_input" name="mon_input" value="17.45" placeholder="R$ 0.00">
+    <label for="tue_input">Tuesday: </label>
+    <input type="text" id="tue_input" name="tue_input" value="34.91" placeholder="R$ 0.00">
+    <label for="wed_input">Wednesday: </label>
+    <input type="text" id="wed_input" name="wed_input" value="52.36" placeholder="R$ 0.00">
+    <label for="thu_input">Thursday: </label>
+    <input type="text" id="thu_input" name="thu_input" value="31.07" placeholder="R$ 0.00">
+    <label for="fri_input">Friday: </label>
+    <input type="text" id="fri_input" name="fri_input" value="23.39" placeholder="R$ 0.00">
+    <label for="sat_input">Saturday: </label>
+    <input type="text" id="sat_input" name="sat_input" value="43.28" placeholder="R$ 0.00">
+    <label for="sun_input">Sunday: </label>
+    <input type="text" id="sun_input" name="sun_input" value="25.48" placeholder="R$ 0.00">
+
+    <button onclick="valo()">Refresh</button>
+  </aside>
+
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.linkedin.com/in/gustavo-santos-628b07191/" target="_blank">Gustavo Santos Silva</a>.
   </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
