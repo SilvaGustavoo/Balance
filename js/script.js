@@ -33,7 +33,7 @@ let sun_amount = parseFloat(document.getElementById("sun_input").value)
  * @returns {0.00} retorna ' 0 ' caso o valor inserido for diferente de um numero ou vazio
  */
 function vazio() {
-
+    
     isNaN(mon_amount) == true || mon_amount < 0 ? mon_amount = 0.00 : mon_amount
     isNaN(tue_amount) == true || tue_amount < 0 ? tue_amount = 0.00 : tue_amount
     isNaN(wed_amount) == true || wed_amount < 0 ? wed_amount = 0.00 : wed_amount
@@ -100,18 +100,19 @@ const diaSemana = ["segunda", "terça", "quarta", "quinta", "sexta", "sabado", "
 
 let total = 0 // valor acomulado
 let maiorNumero = 0 // maior gasto
-
+let corMa0ior = 0
+let numeroAnt = 0
 
 /**
  * @description essa função pega todos os gastos em cada dia da semana e faz a sua soma e coleta o maior valor entre eles
  * @returns {number} retorna o total dos gastos gerados ap longo da semana.
  */
 function repetidor() {
-
+    document.getElementById("mon").style="background-color: black;";
     switch (diaSemana[x]) {
         case "segunda":
             total = total + carrinho.segunda.amount
-            if (carrinho.segunda.amount > maiorNumero) {maiorNumero = carrinho.segunda.amount}
+            if (carrinho.segunda.amount > maiorNumero) {maiorNumero = carrinho.segunda.amount;}
         break
         case "terça":
             total = total + carrinho.terca.amount
@@ -139,6 +140,11 @@ function repetidor() {
         break
     }
 
+    if (maiorNumero > numeroAnt) {
+        corMaior = x
+        numeroAnt = maiorNumero
+    }
+
     x = x + 1;
 
     // enquanto o contador nao passar os 7 dias ele ira repetir-se chamando a funçao novamente
@@ -158,12 +164,12 @@ function repetidor() {
         domingoWidth = carrinho.domingo.amount/maiorNumero
         porcentagem()
         atualizarValor()
-
+        corAzul()
         repetiu = false
 
     }
 
-    return console.log(maiorNumero, total)
+    return console.log(maiorNumero, total, corMaior)
 }
 
 repetidor()
@@ -208,5 +214,14 @@ function atualizarValor() {
     document.getElementById("mesAnterior").innerText=(( (total+250.39)*100 / 466.85 )- 100).toFixed(1) + "%"
 }
 
+
+
 atualizarValor()
 console.log(maiorNumero)
+
+function corAzul() {
+    let colorSemana = ["mon","tue","wed","thu","fri","sat","sun"]
+    document.getElementById(colorSemana[corMaior]).style="background-color: hsl(186, 34%, 60%)"
+}
+
+corAzul()
