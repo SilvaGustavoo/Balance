@@ -6,27 +6,24 @@
 
 Thanks for checking out this front-end coding challenge.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+I hope you like what was produced, and if you have any criticism to make, I would be grateful to receive it on my [Linkedin - Gustavo Santos Silva](https://www.linkedin.com/in/gustavo-santos-628b07191/)
 
-**To do this challenge, you need a decent understanding of HTML, CSS and JavaScript.**
+**To do this challenge, was need a decent understanding of HTML, CSS and JavaScript.**
 
 ## The challenge
 
-Your challenge is to build out this bar chart component and get it looking as close to the design as possible.
+The challenge was to build out this bar chart component and get it looking as close to the design as possible above.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+Were provided the data for the chart in a local `data.json` file. Which could be used that to dynamically add the bars if you choose.
 
-We provide the data for the chart in a local `data.json` file. So you can use that to dynamically add the bars if you choose.
+The funcionalities created in my project had as goal of:
 
-Your users should be able to:
-
-- View the bar chart and hover over the individual bars to see the correct amounts for each day
+- View the bar chart and pass hover over the individual bars to see the correct amounts for each day
 - See the current day's bar highlighted in a different colour to the other bars
 - View the optimal layout for the content depending on their device's screen size
 - See hover states for all interactive elements on the page
 - **Bonus**: See dynamically generated bars based on the data provided in the local JSON file
-
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+- **Bonus**: Update the dices inserted for user dinamically
 
 ## Where to find everything
 
