@@ -27,14 +27,7 @@ Os usuários devem ser capazes de:
 
 ### Captura de tela
 
-
-Adicione uma captura de tela da sua solução. A maneira mais fácil de fazer isso é usar o Firefox para visualizar seu projeto, clicar com o botão direito do mouse na página e selecionar "Fazer uma captura de tela". Você pode escolher uma captura de tela de altura total ou uma cortada com base no tamanho da página. Se for muito longo, talvez seja melhor cortá-lo.
-
-Alternativamente, você pode usar uma ferramenta como FireShot para fazer a captura de tela. FireShot tem uma opção gratuita, então você não precisa comprá-la.
-
-Em seguida, corte/otimize/edite sua imagem como quiser, adicione-a ao seu projeto e atualize o caminho do arquivo na imagem acima.
-
-Nota: Exclua esta nota e os parágrafos acima ao adicionar sua captura de tela. Se você preferir não adicionar uma captura de tela, sinta-se à vontade para remover esta seção inteira.
+<div align="center"><img src="https://user-images.githubusercontent.com/86896848/195672824-f2b301f5-baf0-47d7-9f32-bf77c67b1133.png" alt="My Design" text-align="center" align="center" f/></div>
 
 ### Links
 - URL da solução: [Solução e comparação com o modelo proposto](https://www.frontendmentor.io/solutions/pagina-responsiva-e-com-interao-ao-usuario-com-js-0MxRbcxZE9)
@@ -114,3 +107,4 @@ Agradeço muito mais a vocês que leram meu projeto, fico muito feliz em pensar 
 <br>
 <br>
 <h3 align="right" font-size="204px"><em>Atenciosamente, Gustavo Silva</em></h3>
+
